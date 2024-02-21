@@ -1,0 +1,168 @@
+<html>
+
+<head>
+<title>HOME</title>
+    <style>
+        .loader_bg {
+            position: fixed;
+            z-index: 999999;
+            background: #fff;
+            width: 100%;
+            height: 100%;
+        }
+
+        .loader {
+            border: 0px solid transparent;
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            position: absolute;
+            top: calc(50vh - 75px);
+            left: calc(50vw - 75px);
+        }
+
+        .loader:before,
+        .loader:after {
+            content: '';
+            border: 1em solid #33ff33;
+            border-radius: 50%;
+            width: 2px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            animation: loader 2s linear infinite;
+            opacity: 0;
+        }
+
+        .loader:before {
+            animation-delay: .5s;
+        }
+
+        /* Responsive Styles */
+        @media only screen and (max-width: 768px) {
+            /* Adjust loader size for smaller screens */
+            .loader {
+                width: 100px;
+                height: 100px;
+                top: calc(50vh - 50px);
+                left: calc(50vw - 50px);
+            }
+
+            .loader:before,
+            .loader:after {
+                border-width: 0.5em;
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+            /* Adjust loader size for even smaller screens */
+            .loader {
+                width: 80px;
+                height: 80px;
+                top: calc(50vh - 40px);
+                left: calc(50vw - 40px);
+            }
+
+            .loader:before,
+            .loader:after {
+                border-width: 0.4em;
+            }
+        }
+
+        /* Add your other styles here */
+    </style>
+
+
+<link rel="Stylesheet" href="Nav.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+<body>
+
+<div class="loader_bg">
+<div class="loader"></div>
+</div>
+
+<div>
+<p><img src="image/m1.jpg" style="height:170;width:170; margin-right:15px;"><h1 style=color:#e63900;>Maharshi Karve Stree Shikshan Samstha(MKSSS)</h1></p>
+<P>125 YEARS JOURNEY FOR WOMENS EMPOWERMENT THROUGH EDUCATION</P>
+</div>
+<br><br><br>
+
+<!--<div id="audio" class="container">
+<div class="row">
+<div class="col-sm-10">
+<audio controls autoplay>
+  <source src="prarthana.mp3" type="audio/mp3">
+</audio>
+</div>
+</div>
+</div>-->
+
+<div class="navbar">
+  <a class="active" href="Home.html">Home</a> 
+  <a href="about.html">About</a> 
+  <a href="Facilities.html">Facilities</a> 
+  <a href="gallery1.html">gallery</a>
+  <a href="contact.html">contact</a>
+</div>
+<br><br>
+
+<div class="container" style="height:200px;width:200px;">
+<div class="row">
+<img src="image/m5.jfif">
+</div>
+</div>
+
+
+
+
+
+<div id="vido" class="container">
+<div class="row">
+<div class="col-sm-10">
+<video playsinline loop muted controls autoplay>
+  <source src="karve2.mp4">
+</video>
+</div>
+</div>
+<br>
+
+<div class="container">
+<div class="row">
+<p>Maharshi Karve Stree Shikshan Samstha, Pune has  branches all over Maharashtra in India and more than 35,000 girl students are learning in these institutions. Over the period of last 124 years, the Institution has grown like a banyan tree and at present it runs 65 educational and other units under its umbrella. These units are located at Pune, Satara, Wai, Ratnagiri, Nagpur, Kamshet and Vasai. All these units are meant exclusively for girls or women.  We also have hostel and medical facilities for students and working women and old age home for senior citizens.
+
+The Institution offers education from Kindergarten, Pre-Primary, Primary, Secondary, Higher Secondary schools to Higher Education Colleges. At present the Institution runs higher education units like, Engineering, Architecture, Management, Nursing, Fashion Technology, Vocational Training Institute, Laser Technology & Applications, Jewelry Design, etc. With the changing trends in the jobs market, the courses like Data Science, Artificial Intelligence, Machine learning, laser technology, Automotive Mechatronics are also planned in near future.
+
+MKSSS strives hard to develop women into truly performing citizens in today’s globalization era.
+</p>
+</div>
+</div>
+
+
+
+
+<div  id="Footer" class="container">
+ <div class="row">
+  <div class="col"><h3>Maharshi Karve Stree Shikshan Samstha</h3><p>The 125-year-old parent body has been committed to “Empowerment of women through education”. The Institution has a century long history of dedicated work towards making women educated and self-reliant. MKSSS, Pune was established in 1896 by the great visionary and social worker Bharat Ratna Maharshi Dhondo Keshav Karve to provide  shelter to destitute women.</p> </div>
+  <div class="col"><h4>Maharshi Karve Stree Shikshan Samstha</h4><br>
+  <p>Karve Nagar, Pune - 411052<><br>
+Phone: +91.20.25313000 / 25313200<br>
+Fax: +91.20.25313300<br>
+Email Id: info@maharshikarve.orgestitute women.</p></div>
+ </div>
+<div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+           
+       <script>
+	   
+	     setTimeout(function(){
+		    $('.loader_bg').fadeToggle();
+		 }, 1500);
+		
+	   </script>
+
+</body>
+</html>
