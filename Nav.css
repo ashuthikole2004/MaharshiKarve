@@ -67,7 +67,6 @@ align:center;
 	width:300px;
 }
 
-<style>
 * {
   box-sizing: border-box;
 }
@@ -76,6 +75,12 @@ body {
   margin: 0;
   font-family: Arial;
   font-size: 17px;
+}
+
+/* Custom CSS for responsive video */
+.responsive-video {
+  width: 100%;
+  height: auto;
 }
 
 
